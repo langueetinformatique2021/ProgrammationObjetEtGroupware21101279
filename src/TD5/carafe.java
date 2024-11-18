@@ -25,14 +25,15 @@ public class carafe {
 		this.contenu_=contenu;
 		
 	}
-/** transvaser la carafe c dans la carafe this 
+/** transvaser la carafe c dans la carafe this = carafe courante
  * @param c'est la carafe à transvaser*/
-	public void transvaser(carafe c) {int reste= this.capacite_ - this.contenu_;
-	if (c.contenu<reste) {
-	this.contenu(Contenu()+ c.contenu());
+	public void transvaser(carafe c) {int reste= this.capacite_ - this.contenu_;/**reste calcule espace qui reste ds carafe*/
+	if (c.contenu<reste) {/**Si le contenu de la carafe source (c) est inférieur à l'espace disponible dans la carafe courante (reste), 
+	cela signifie qu'il est possible de transférer tout le contenu de la carafe source dans la carafe courante.*/
+	this.contenu+= c.contenu();
 	c.vider();}
 	else { c.contenu_-= reste;
-	this.remplir();
+	this.remplir();/**  La carafe courante (this) est remplie à sa capacité maximale. */
 	
 	}
 	}
