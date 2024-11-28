@@ -12,7 +12,7 @@ public abstract class animal {
 	 * @param type: nom de l'espèce
 	 * @rparam pattes: nbr pattes*/
 	
-	public Animal(String type, int pattes) {
+	public animal(String type, int pattes) {
 		espèce = type;
 		nb_pattes = pattes;
 	}

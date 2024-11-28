@@ -17,7 +17,9 @@ public class felin extends animal {
 	}
 	/**cri du félin*/
 	public void crie() {
-		System.out.println("Meow");
+		String cri = (domestique) ? "miaule" : "rugis";
+		System.out.println("Je suis un félin et je " + cri);
+
 	}
 	
 public String nom() {
