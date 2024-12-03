@@ -5,14 +5,18 @@ public abstract class superVegetal {
 	 private String species; 
 	 private int CO2=0;
 	 
-	 // une maniere d'acceder a un attribut private
+	// initialiser un obj pour superVegetal
 	 public superVegetal(String espece) {
-		 species= espece;
+		 this.species= espece;
 	 }
 	
-	 // une autre maniere d'acceder a un attribut private 
+	 // une  maniere d'acceder a un attribut private 
 	 public int getRespiration_cellulaire(){
 		 return CO2;
+	 }
+	 
+	 public String getEspece() {
+		 return species;
 	 }
 	 
 	 // une methode que les sous-classe pourront utiliser

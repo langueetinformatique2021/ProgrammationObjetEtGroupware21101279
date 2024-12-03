@@ -16,7 +16,7 @@ public class fleur extends superVegetal {
 	// ajout d'un print pour presentation ça affichera la
 	// methode presentation ci-dessous et presentation de superVegetal 
 	public void presentation() {
-		System.out.println("Bonjour j'ai" + nbr_petal + " et une tige de " + taille_tige);
+		System.out.println("Bonjour j'ai" + nbr_petal + " et une tige de " + taille_tige + "et je suis" + getEspece());
 		
 	}
 
