@@ -1,7 +1,7 @@
 package TD6;
 
 // sous classe de superVegetal
-public class fleur extends superVegetal {
+public abstract class fleur extends superVegetal {
 	// attribut privee specifique au fleurs
 	private int nbr_petal;
 	private int taille_tige;
