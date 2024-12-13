@@ -5,6 +5,7 @@ import java.io.IOException; // class too
 import java.io.PrintWriter; // a class
 import java.io.BufferedReader;
 import java.io.FileReader; // class too
+ 
 
 public class EcrireFichier {
 	public static void main(String[] args) {
