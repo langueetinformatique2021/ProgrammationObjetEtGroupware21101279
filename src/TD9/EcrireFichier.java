@@ -22,7 +22,9 @@ public class EcrireFichier {
 			pr.close(); // tjrs fermer
 		}
 		
-		catch (IOException e) {e.printStackTrace();}
+		catch (IOException e) {
+			System.err.println("prbleme d'ecriture");
+			e.printStackTrace();}
 		
 		//lire un file 
 		try {
@@ -36,6 +38,7 @@ public class EcrireFichier {
 		
 		lire.close();
 		} catch(IOException e) {
+			System.err.println("probleme de lecture");
 			e.printStackTrace();
 		}
 	}
