@@ -24,7 +24,7 @@ public class EcrireFichier {
 		
 		catch (IOException e) {e.printStackTrace();}
 		
-		//lire un file
+		//lire un file 
 		try {
 		BufferedReader lire= new BufferedReader(new FileReader("num.txt"));
 		String ligne; // var ligne
