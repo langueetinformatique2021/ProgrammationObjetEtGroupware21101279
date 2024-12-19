@@ -37,9 +37,9 @@ public class EcrireFichier {
 		}
 		
 		lire.close();
-		} catch(IOException e) {
+		} catch(IOException e) { // exception specifique pr erreur d'entree/sortie
 			System.err.println("probleme de lecture");
-			e.printStackTrace();
+			e.printStackTrace();// print état actuel de 
 		}
 	}
 
